@@ -5,5 +5,4 @@ package example.codeclan.com.liskov;
  */
 
 abstract class Shape {
-
 }
