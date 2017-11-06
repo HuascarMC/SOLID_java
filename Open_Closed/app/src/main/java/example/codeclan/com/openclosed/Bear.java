@@ -4,6 +4,7 @@ package example.codeclan.com.openclosed;
  * Created by user on 27/06/2017.
  */
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 // Open / Closed Principle:
@@ -15,11 +16,11 @@ import java.util.ArrayList;
 
 public class Bear{
 
-    private ArrayList<Salmon> belly = new ArrayList<Salmon>();
+    private ArrayList<Food> belly = new ArrayList<Food>();
 
-    public void eat(Salmon food){
+    public void eat(Food meal){
         if (!isBellyFull()){
-            belly.add(food);
+            belly.add(meal);
         }
     }
 
